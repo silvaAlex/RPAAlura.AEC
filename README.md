@@ -1,8 +1,6 @@
 # RPAAlura.AEC
 
 ![](https://img.shields.io/badge/autor-Alex%20Junior-brightgreen)
-![](https://img.shields.io/github/languages/count/silvaAlex/RPAAlura.AEC)
-![](https://img.shields.io/github/last-commit/silvaAlex/RPAAlura.AEC)
 
 ## Escopo do Projeto
 
