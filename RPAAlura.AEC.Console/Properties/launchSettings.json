@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RPAAlura.AEC.Console": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

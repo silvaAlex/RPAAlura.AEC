@@ -1,9 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPAAlura.AEC.Console", "RPAAlura.AEC.Console\RPAAlura.AEC.Console.csproj", "{EA92081B-1DA7-42F0-AB6F-20DEF3BE60ED}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{46668366-3037-4234-AE50-0EE082728D68}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA92081B-1DA7-42F0-AB6F-20DEF3BE60ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA92081B-1DA7-42F0-AB6F-20DEF3BE60ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA92081B-1DA7-42F0-AB6F-20DEF3BE60ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA92081B-1DA7-42F0-AB6F-20DEF3BE60ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46668366-3037-4234-AE50-0EE082728D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46668366-3037-4234-AE50-0EE082728D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46668366-3037-4234-AE50-0EE082728D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46668366-3037-4234-AE50-0EE082728D68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

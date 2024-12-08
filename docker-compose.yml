@@ -1,0 +1,17 @@
+services:
+  rpaalura.aec.console:
+    image: ${DOCKER_REGISTRY-}rpaaluraaecconsole
+    build:
+      context: .
+      dockerfile: RPAAlura.AEC.Console/Dockerfile
+    depends_on:
+      - db 
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Postgres2024!
+      POSTGRES_USER: postgres
+      POSTGRES_DB: CursoDB
+    ports:
+      - "5432:5432"
