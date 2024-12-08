@@ -8,6 +8,7 @@ services:
       - db 
   db:
     image: postgres
+    container_name: rpaalura-container
     restart: always
     environment:
       POSTGRES_PASSWORD: Postgres2024!

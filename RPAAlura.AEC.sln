@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPAAlura.AEC.Console", "RPA
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{46668366-3037-4234-AE50-0EE082728D68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPAAlura.AEC.Infra", "RPAAlura.AEC.Infra\RPAAlura.AEC.Infra.csproj", "{4D125427-46B0-4FDC-91BF-9AD03425232E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPAAlura.AEC.Application", "RPAAlura.AEC.Application\RPAAlura.AEC.Application.csproj", "{04ACD4E7-BE5F-4116-AE57-7B9A4E195E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPAAlura.AEC.Domain", "RPAAlura.AEC.Domain\RPAAlura.AEC.Domain.csproj", "{26CC9544-5822-4B03-B23D-53F59BF7662F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{46668366-3037-4234-AE50-0EE082728D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46668366-3037-4234-AE50-0EE082728D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46668366-3037-4234-AE50-0EE082728D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D125427-46B0-4FDC-91BF-9AD03425232E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D125427-46B0-4FDC-91BF-9AD03425232E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D125427-46B0-4FDC-91BF-9AD03425232E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D125427-46B0-4FDC-91BF-9AD03425232E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04ACD4E7-BE5F-4116-AE57-7B9A4E195E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04ACD4E7-BE5F-4116-AE57-7B9A4E195E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04ACD4E7-BE5F-4116-AE57-7B9A4E195E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04ACD4E7-BE5F-4116-AE57-7B9A4E195E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26CC9544-5822-4B03-B23D-53F59BF7662F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26CC9544-5822-4B03-B23D-53F59BF7662F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26CC9544-5822-4B03-B23D-53F59BF7662F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26CC9544-5822-4B03-B23D-53F59BF7662F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
