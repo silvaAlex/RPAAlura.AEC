@@ -19,3 +19,24 @@ Com o retorno da pesquisa salvar no banco de dados os seguintes dados:
 - Professor (Pode ser um ou todos); 
 - Carga Horária; 
 -  Descrição;
+
+### Docker-Compose
+- a variável `CURSO` dentro do docker-compose e responsável por buscar os cursos dentro da alura
+
+altere para buscar outros cursos
+
+```yml
+services:
+  rpaalura.aec.console:
+    environment:
+      SELENIUM_URL: "http://selenium:4444"
+      CURSO: "Forma&ccedil;&atilde;o Modelagem e Melhorias de Processos de Neg&oacute;cios"
+```
+
+
+#### Como rodar
+```shell
+docker-compose up
+```
+
+
