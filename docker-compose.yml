@@ -1,11 +1,20 @@
 services:
+  selenium:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium_chrome
+    ports:
+      - "4444:4444" 
   rpaalura.aec.console:
     image: ${DOCKER_REGISTRY-}rpaaluraaecconsole
     build:
       context: .
       dockerfile: RPAAlura.AEC.Console/Dockerfile
     depends_on:
-      - db 
+      - db
+      - selenium
+    environment:
+      SELENIUM_URL: "http://selenium:4444"
+      CURSO: "Forma&ccedil;&atilde;o Modelagem e Melhorias de Processos de Neg&oacute;cios"
   db:
     image: postgres
     container_name: rpaalura-container
@@ -15,4 +24,4 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: CursoDB
     ports:
-      - "5432:5432"
+    - "5432:5432"
