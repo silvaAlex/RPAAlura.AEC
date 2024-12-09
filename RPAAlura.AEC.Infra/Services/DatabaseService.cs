@@ -1,7 +1,7 @@
 ﻿using Npgsql;
 using RPAAlura.AEC.Application.Interfaces;
 
-namespace RPAAlura.AEC.Application.Services
+namespace RPAAlura.AEC.Infra.Services
 {
     public class DatabaseService : IDatabaseService
     {
@@ -16,17 +16,14 @@ namespace RPAAlura.AEC.Application.Services
             using var connection = new NpgsqlConnection(builder.ToString());
             connection.Open();
 
-            using (var cmd = new NpgsqlCommand($"SELECT 1 FROM pg_database WHERE datname = '{dbName}'", connection))
+            using var cmd = new NpgsqlCommand($"SELECT 1 FROM pg_database WHERE datname = '{dbName}'", connection);
+
+            var result = cmd.ExecuteScalar();
+            if (result == null)
             {
-                var result = cmd.ExecuteScalar();
-                if (result == null)
-                {
-                    // Banco de dados não existe, criamos ele
-                    using (var createDbCmd = new NpgsqlCommand($"CREATE DATABASE \"{dbName}\"", connection))
-                    {
-                        createDbCmd.ExecuteNonQuery();
-                    }
-                }
+                // Banco de dados não existe, criamos ele
+                using var createDbCmd = new NpgsqlCommand($"CREATE DATABASE \"{dbName}\"", connection);
+                createDbCmd.ExecuteNonQuery();
             }
         }
     }
