@@ -14,13 +14,17 @@ namespace RPAAlura.AEC.Infra.Repository
             _dbConnection = dbConnection;
         }
 
-
         public void Save(Curso curso)
         {
+            if (_dbConnection.State != ConnectionState.Open)
+            {
+                _dbConnection.Open();
+            }
+
             using var transaction = _dbConnection.BeginTransaction();
             try
             {
-                // Insert the course and get the generated Id
+
                 var courseId = _dbConnection.ExecuteScalar<int>(
                     "INSERT INTO Cursos (Titulo, CargaHoraria, Descricao) VALUES (@Titulo, @CargaHoraria, @Descricao) RETURNING Id",
                     new { curso.Titulo, curso.CargaHoraria, curso.Descricao },
