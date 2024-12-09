@@ -5,7 +5,7 @@
 ## Escopo do Projeto
 
 Desafio para uma vaga que consiste no desenvolvimento de um RPA simples que realiza uma busca 
-automaizada no site da [Alura](https://www.alura.com.br/) e grava os resultados em um 
+automatizada no site da [Alura](https://www.alura.com.br/) e grava os resultados em um 
 banco de dados (mais informações abaixo).
 
 ### Requisitos:
