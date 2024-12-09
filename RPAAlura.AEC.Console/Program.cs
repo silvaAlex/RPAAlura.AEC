@@ -13,6 +13,7 @@ using RPAAlura.AEC.Infra.Repository;
 using RPAAlura.AEC.Application.Factory;
 using RPAAlura.AEC.Application.Exceptions;
 using System.Web;
+using RPAAlura.AEC.Infra.Services;
 
 
 class Program
