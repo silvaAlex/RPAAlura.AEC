@@ -22,6 +22,6 @@ services:
     environment:
       POSTGRES_PASSWORD: Postgres2024!
       POSTGRES_USER: postgres
-      POSTGRES_DB: CursoDB
+      POSTGRES_DB: CursosDB
     ports:
     - "5432:5432"

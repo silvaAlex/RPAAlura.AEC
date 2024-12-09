@@ -26,7 +26,7 @@ namespace RPAAlura.AEC.Infra.Repository
             {
 
                 var courseId = _dbConnection.ExecuteScalar<int>(
-                    "INSERT INTO Cursos (Titulo, CargaHoraria, Descricao) VALUES (@Titulo, @CargaHoraria, @Descricao) RETURNING Id",
+                    "INSERT INTO \"Cursos\" (\"Titulo\", \"CargaHoraria\", \"Descricao\") VALUES (@Titulo, @CargaHoraria, @Descricao) RETURNING \"Id\"",
                     new { curso.Titulo, curso.CargaHoraria, curso.Descricao },
                     transaction: transaction);
 
@@ -34,7 +34,7 @@ namespace RPAAlura.AEC.Infra.Repository
                 foreach (var professor in curso.Professores)
                 {
                     _dbConnection.Execute(
-                        "INSERT INTO Professores (CursoId, Nome) VALUES (@CursoId, @Nome)",
+                        "INSERT INTO \"Professores\" (\"CursoId\", \"Nome\") VALUES (@CursoId, @Nome)",
                         new { CursoId = courseId, professor.Nome },
                         transaction: transaction);
                 }
